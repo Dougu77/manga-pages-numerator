@@ -88,7 +88,7 @@ def enumerate_files() -> None:
                 
                 for index, file_name in enumerate(temporary_files_list, start=1):
 
-                    new_name = f'{format_number(index, len(files))}{os.path.splitext(file_name)[1]}'
+                    new_name = f'{format_number(index, len(temporary_files_list))}{os.path.splitext(file_name)[1]}'
 
                     old_file_path = os.path.join(folder_path, file_name)
                     new_file_path = os.path.join(folder_path, new_name)
